@@ -16,9 +16,10 @@
 | :--- | :--- | :--- |
 | **1. Java Core & Spring Boot** | [01_JAVA_CORE_SPRING_BOOT_COMPREHENSIVE_GUIDE.md](./01_JAVA_CORE_SPRING_BOOT_COMPREHENSIVE_GUIDE.md) | • **Java Core**: OOP, JVM Memory & GC, HashMap Treeify, Concurrency, Virtual Threads.<br/>• **Spring Core**: IoC/DI, Bean Lifecycle, AOP Proxy, Spring MVC, Data JPA (bẫy N+1), `@Transactional`.<br/>• **Đại từ điển Annotation**: Tra cứu 8 nhóm annotation thông dụng. |
 | **2. Kiến Trúc Base & Config (KBSV PNS)** | [02_BASE_AND_CONFIG_ARCHITECTURE_ANALYSIS.md](./02_BASE_AND_CONFIG_ARCHITECTURE_ANALYSIS.md) | • **Package `base`**: Generic `BaseController`/`BaseService`, Dynamic `JPABuilder`, In-memory `LangService` $O(1)$, `BulkInsertService` (Raw JDBC).<br/>• **Package `config`**: Multi-Datasource (MySQL + Oracle Flex), Redis Cluster, Stateless Security Filter Chain. |
-| **3. NestJS API Development** | [NESTJS_API_DEVELOPMENT_GUIDE.md](./NESTJS_API_DEVELOPMENT_GUIDE.md) | • **Kiến trúc Modular & Submodules**: Redis, Kafka, WebSocket Gateway.<br/>• **Quy trình 4 bước tạo API**: DTO $\rightarrow$ Service $\rightarrow$ Controller $\rightarrow$ Module.<br/>• **Kỹ thuật thực chiến**: Defensive Programming, Testing, Troubleshooting. |
-| **4. Luồng Dữ Liệu API (Data Flow)** | [API_DATA_FLOW.md](./API_DATA_FLOW.md) | • **Ẩn dụ Nhà Hàng**: Client $\rightarrow$ Controller $\rightarrow$ Service $\rightarrow$ Storage $\rightarrow$ DTO.<br/>• **Sequence Diagram**: Chi tiết từng bước Request/Response trong thực tế. |
-| **5. Sơ Đồ WebSocket Realtime** | [webSocket.png](./webSocket.png) | • Sơ đồ luồng Gateway kết nối WebSocket thời gian thực tới Client. |
+| **3. Redis & Redis Cluster Thực Chiến** | [03_REDIS_AND_REDIS_CLUSTER_COMPREHENSIVE_GUIDE.md](./03_REDIS_AND_REDIS_CLUSTER_COMPREHENSIVE_GUIDE.md) | • **Redis Core**: Cấu trúc dữ liệu In-Memory, Use Cases.<br/>• **Redis Cluster**: 16,384 Hash Slots, CRC16, Gossip Protocol (Port +10000), Client Routing (MOVED/ASK), Automatic Failover Majority Voting.<br/>• **Thực chiến**: Docker Compose 6 nodes, Kỹ thuật Hash Tags `{...}`, Resharding & Best Practices. |
+| **4. NestJS API Development** | [04_NESTJS_API_DEVELOPMENT_GUIDE.md](./04_NESTJS_API_DEVELOPMENT_GUIDE.md) | • **Kiến trúc Modular & Submodules**: Redis, Kafka, WebSocket Gateway.<br/>• **Quy trình 4 bước tạo API**: DTO $\rightarrow$ Service $\rightarrow$ Controller $\rightarrow$ Module.<br/>• **Kỹ thuật thực chiến**: Defensive Programming, Testing, Troubleshooting. |
+| **5. Luồng Dữ Liệu API (Data Flow)** | [05_API_DATA_FLOW.md](./05_API_DATA_FLOW.md) | • **Ẩn dụ Nhà Hàng**: Client $\rightarrow$ Controller $\rightarrow$ Service $\rightarrow$ Storage $\rightarrow$ DTO.<br/>• **Sequence Diagram**: Chi tiết từng bước Request/Response trong thực tế. |
+| **6. Sơ Đồ WebSocket Realtime** | [06_WebSocket.png](./06_WebSocket.png) | • Sơ đồ luồng Gateway kết nối WebSocket thời gian thực tới Client. |
 
 ---
 
@@ -37,17 +38,19 @@
 
 ---
 
-## 🎓 LỘ TRÌNH HỌC TẬP GỢI Ý
+## 🎓 LỘ TRÌNG HỌC TẬP GỢI Ý
 
 ```
 Tuần 1: Java Core Nâng Cao (OOP, JVM, Concurrency)
    └── File: 01_JAVA_CORE... (Phần 1)
 Tuần 2: Spring Boot Architecture & Annotations (IoC, AOP, JPA, Security)
    └── File: 01_JAVA_CORE... (Phần 2 & 3)
-Tuần 3: Kiến Trúc Framework Thực Tế (Base CRUD, Multi-DS, Redis Cluster)
+Tuần 3: Kiến Trúc Framework Thực Tế & Cấu Hình Hạ Tầng (Base CRUD, Multi-DS)
    └── File: 02_BASE_AND_CONFIG...
-Tuần 4: NestJS API & Realtime Streaming (Kafka, Redis, WebSocket)
-   └── Files: NESTJS_API_DEVELOPMENT_GUIDE.md & API_DATA_FLOW.md
+Tuần 4: Hệ Thống Phân Tán Redis & Redis Cluster Thực Chiến
+   └── File: 03_REDIS_AND_REDIS_CLUSTER_COMPREHENSIVE_GUIDE.md
+Tuần 5: NestJS API & Realtime Streaming (Kafka, Redis, WebSocket)
+   └── Files: 04_NESTJS_API_DEVELOPMENT_GUIDE.md & 05_API_DATA_FLOW.md
 ```
 
 ---
